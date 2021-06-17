@@ -1,10 +1,10 @@
-function Set-ADPremissionJoinDomain{
+function Set-OUPermissions{
 <#
 .DESCRIPTION
 The function will delegate the permission for a group to join a computer to a domain 
 
 .EXAMPLE
-Set-ADPremissionJoinDomain -Group "Delegated Users" -LDAPPath "ou=Mobile,ou=Computers,ou=Test2,ou=!Offices,dc=corpnet,dc=liox,dc=org"
+Set-OUPermissions -Group "Delegated Users" -LDAPPath "ou=Mobile,ou=Computers,ou=Test2,ou=!Offices,dc=corpnet,dc=liox,dc=org"
 #>
    [CmdletBinding()]
    param(
